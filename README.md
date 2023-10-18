@@ -1,72 +1,25 @@
-# Dyspach-Task
+# TASK TRACKER APP
 
-# Getting Started with Create React App
+#### HOW TO RUN LOCALLY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Clone the respository from github.
 
-## Available Scripts
+2. In the project directory, Run `npm install`
 
-In the project directory, you can run:
+3. Once the installation is complete, Run `npm start`
 
-### `npm start`
+4. The Project will start locally in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### APP DESCRIPTION
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is an Task Tracking App with all the functionalities for Adding, Updating, Deleting a Task and marking it as completed. This App uses `Redux Toolkit` for state management and `Material UI` for giving this application a decent UI experience. There are a few components and files which are grouped together to make this an completed Application:
 
-### `npm test`
+1. `Task Modal` : It Contains a form to fill all the necessary information about your task, such as, Title, Description and Due Date. Also this component dispatches the actions for adding and updating a task.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. `Task List` : It fetches all the Tasks and displays it in a form of list. All the task are sorted based on their creation date.
 
-### `npm run build`
+3. `Task Card` : This component is receiving a task and displaying it in a form of card. You can perform multiple action through this card, like, marking a task as completed, editing a task and deleting a task.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. `Task Home` : This is the Home Page of the application which render all components. This component contains a Button to `Add Tasks`, a Filter component to `filter Tasks` based on their status and the Task List component.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. `Task Slice` : This is a Slice which contains all the logic for adding, updating, deleting a task along with handling the filter.

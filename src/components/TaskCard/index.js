@@ -66,7 +66,7 @@ const TaskCard = ({ task = {} }) => {
               {task.description}
             </Typography>
             <Typography variant="subtitle" color={'tertiary.main'}>
-              Due on: {moment(task.dueDate).format('ll')}
+              Due by: {moment(task.dueDate).format('ll')}
             </Typography>
           </Stack>
         </Stack>

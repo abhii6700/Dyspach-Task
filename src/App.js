@@ -1,4 +1,3 @@
-import { useSelector } from 'react-redux';
 import TaskHome from './pages/TaskHome';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { Toaster } from 'react-hot-toast';
@@ -44,11 +43,6 @@ const theme = createTheme({
       fontFamily: 'Rubik',
       fontSize: '16px',
       fontWeight: 600,
-    },
-    button: {
-      fontFamily: 'Montserrat',
-      fontSize: '12px',
-      fontWeight: 700,
     },
     subtitle: {
       fontFamily: 'Montserrat',

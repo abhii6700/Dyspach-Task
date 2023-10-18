@@ -36,6 +36,7 @@ const inputStyles = {
 
 const TaskInput = styled('input')(({ theme }) => ({
   ...inputStyles,
+  fontSize: '16px',
 }));
 
 const TaskModal = ({

@@ -18,7 +18,7 @@ const TaskList = () => {
           return task.completed;
         }
       })
-      .sort((a, b) => b.createDate - a.createDate);
+      .sort((a, b) => a.dueDate - b.dueDate);
   }, [taskList, filter]);
 
   return (

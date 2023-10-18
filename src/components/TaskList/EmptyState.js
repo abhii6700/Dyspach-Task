@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Stack, Button, Typography } from '@mui/material';
 import TaskModal from '../TaskModal';
 
-const EmptyState = () => {
+const EmptyState = ({ filterValue }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -15,7 +15,11 @@ const EmptyState = () => {
         borderRadius={3}
       >
         <Typography variant="h1" color={'tertiary.light'} textAlign={'center'}>
-          You haven’t added any Tasks.
+          {filterValue === 'all'
+            ? 'You haven’t added any Tasks.'
+            : filterValue === 'completed'
+            ? 'You haven’t completed any Tasks.'
+            : "You don't have any pending task"}
         </Typography>
         <Typography variant="h2" color={'tertiary.light'}>
           Welcome 👋🏼 Let’s get started.

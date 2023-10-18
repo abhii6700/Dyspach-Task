@@ -26,7 +26,7 @@ const TaskList = () => {
       {filteredList?.length > 0 ? (
         filteredList?.map((task) => <TaskCard key={task.id} task={task} />)
       ) : (
-        <EmptyState />
+        <EmptyState filterValue={filter} />
       )}
     </>
   );
